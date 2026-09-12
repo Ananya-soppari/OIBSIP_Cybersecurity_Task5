@@ -3,8 +3,6 @@
 ## Research Report – Security Analyst Track
 
 **Task:** Task 5 – Social Engineering Attacks
-**Author:** Soppari Ananya
-**Technology:** Markdown and GitHub
 
 
 ## Table of Contents
@@ -94,20 +92,21 @@ The attacker first gathers information about the target from sources such as com
 
 ### 3.3 Real-World Example
 
-Spear phishing has been used in business email compromise (BEC) attacks, where attackers impersonate executives or trusted business partners and send targeted messages to employees. For example, an attacker may impersonate a company executive and request an urgent transfer of funds to a particular account. The use of personal and organizational information can make the fraudulent request appear legitimate and increase the chance that an employee will follow the instructions.
+A documented example of spear phishing involved four Iranian nationals charged by the U.S. Department of Justice for a multi-year cyber campaign. The attackers used spearphishing emails and social engineering, including impersonation, to gain the confidence of targeted individuals. Their campaign was directed at organizations and individuals in the United States and other countries.
 
 ### 3.4 Impact
 
-Spear phishing can lead to credential theft, unauthorized access to corporate accounts, financial losses, disclosure of confidential information, and malware infections. A successful attack against one employee can also provide attackers with access to internal systems or additional information that can be used for further attacks.
+Spear phishing can lead to:
+- Theft of usernames, passwords, and other credentials.
+- Unauthorized access to organizational systems.
+- Malware installation and data theft.
+- Financial losses and reputational damage.
 
-### 3.5 Mitigation Strategies
+### 3.5 Prevention and Mitigation
 
-1. **Verify unusual requests:** Employees should independently confirm unexpected requests for sensitive information, payments, or account changes using a trusted communication method.
-
-2. **Use MFA and strong authentication:** Multi-factor authentication reduces the risk of account compromise when credentials are stolen.
-
-3. **Implement email security and monitoring:** Organizations should use email filtering, anti-phishing controls, authentication mechanisms, and monitoring to identify suspicious messages and account activity.
-
+1. **Verify suspicious requests:** Confirm unexpected requests through a separate trusted communication channel.
+2. **Use multi-factor authentication (MFA):** MFA reduces the risk of account compromise even when passwords are stolen.
+3. **Security awareness training:** Train employees to identify targeted phishing emails, impersonation attempts, and suspicious links.
 
 ## 4. Whaling
 
@@ -117,25 +116,33 @@ Whaling is a highly targeted form of phishing that focuses on senior or high-val
 
 ### 4.2 How Whaling Works
 
-The attacker researches the target and collects information about their position, responsibilities, colleagues, and business activities. A carefully prepared email or message is then created to appear as if it came from a trusted executive, customer, lawyer, or business partner. The attacker may request a confidential document, transfer of money, or other sensitive action. The message often uses urgency and authority to pressure the victim into acting quickly.
+Whaling attacks usually follow these steps:
+
+1. **Target identification:** The attacker identifies a senior executive or other high-value employee in the organization.
+2. **Information gathering:** Publicly available information such as the person's name, job title, organization, and business relationships may be collected.
+3. **Impersonation:** The attacker creates an email or message that appears to come from the executive or another trusted senior person.
+4. **Urgent request:** The message may ask an employee to make a payment, transfer funds, share confidential information, or perform another sensitive action.
+5. **Victim response:** Because the request appears to come from a senior authority, the employee may act without performing additional verification.
+
+Whaling is particularly dangerous because it combines targeted information gathering with executive impersonation and social pressure.
 
 ### 4.3 Real-World Example
 
-Whaling attacks have been used in business email compromise campaigns against organizations worldwide. In a typical case, attackers impersonate a senior executive and send a targeted request to an employee in the finance department, asking for an urgent payment or transfer. Because the request appears to come from a person with authority, an employee may follow the instruction without performing an independent verification.
+A documented example of whaling is found in Business Email Compromise (BEC) attacks, where criminals impersonate senior executives or other trusted decision-makers. In these attacks, the attacker may send a fraudulent email appearing to come from a CEO, director, or other senior employee and request an urgent payment or transfer of sensitive information. The FBI identifies executive impersonation as a common form of BEC.
 
 ### 4.4 Impact
 
-Whaling can cause significant financial losses, unauthorized disclosure of sensitive business information, account compromise, and reputational damage. Because senior employees may have extensive access privileges, compromising one high-value account can provide attackers with opportunities to carry out additional attacks within the organization.
+Whaling attacks can lead to:
+- Large financial losses through fraudulent payments.
+- Theft of confidential business information.
+- Compromise of executive or employee accounts.
+- Damage to an organization's reputation.
 
-### 4.5 Mitigation Strategies
+### 4.5 Prevention and Mitigation
 
-1. **Require independent verification:** Financial transfers and other high-risk requests should be confirmed through a separate trusted communication channel.
-
-2. **Apply strong authentication:** MFA and strong password policies should be used for executive and other high-privilege accounts.
-
-3. **Implement approval procedures:** Organizations should require multiple levels of authorization for large financial transactions and sensitive requests instead of relying on a single email instruction.
-
-
+1. **Verify financial requests:** Confirm unusual payment or transfer requests using a separate trusted communication method.
+2. **Use multi-factor authentication (MFA):** MFA helps protect accounts even if login credentials are compromised.
+3. **Employee awareness training:** Train employees to recognize executive impersonation, urgent requests, and suspicious email behavior.
 ## 5. Vishing and Smishing
 
 ### 5.1 Vishing
@@ -265,11 +272,9 @@ Organizations can reduce these risks by combining employee awareness with techni
 7. U.S. Department of Justice. *Justice Department Announces Charges Against Four Iranian Nationals for Multi-Year Cyber Campaign Targeting U.S. Companies.*
    https://www.justice.gov/usao-sdny/pr/justice-department-announces-charges-against-four-iranian-nationals-multi-year-cyber
 
-8. WIRED. *An Unprecedented Look at Stuxnet, the World's First Digital Weapon.*
-   https://www.wired.com/2014/11/countdown-to-zero-day-stuxnet/
+8. WIRED. *Trojan Malware Delivered by Sneakernet.*
+   https://www.wired.com/2007/04/trojan-malware-/
 
 9. FBI Internet Crime Complaint Center (IC3). *Internet Crime Reports.*
    https://www.ic3.gov/AnnualReport
 10. U.S. Department of Justice. “Iranian Hackers Indicted for Stealing Data from Aerospace and Satellite Tracking Companies.” https://www.justice.gov/usao-edva/pr/iranian-hackers-indicted-stealing-data-aerospace-and-satellite-tracking-companies
-
-11. WIRED. “Trojan Malware Delivered by Sneakernet.” https://www.wired.com/2007/04/trojan-malware-/
