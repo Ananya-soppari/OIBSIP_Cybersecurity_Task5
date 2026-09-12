@@ -6,54 +6,46 @@
 **Author:** Soppari Ananya
 **Technology:** Markdown and GitHub
 
----
 
 ## Table of Contents
 
 1. Introduction
 2. Phishing Attacks
-
    * 2.1 Overview
    * 2.2 How Phishing Works
    * 2.3 Real-World Example
    * 2.4 Impact
    * 2.5 Mitigation Strategies
 3. Spear Phishing
-
    * 3.1 Overview
    * 3.2 How Spear Phishing Works
    * 3.3 Real-World Example
    * 3.4 Impact
    * 3.5 Mitigation Strategies
 4. Whaling
-
    * 4.1 Overview
    * 4.2 How Whaling Works
    * 4.3 Real-World Example
    * 4.4 Impact
    * 4.5 Mitigation Strategies
 5. Vishing and Smishing
-
    * 5.1 Vishing
    * 5.2 Smishing
    * 5.3 Impact
    * 5.4 Mitigation Strategies
 6. Pretexting and Baiting
-
    * 6.1 Pretexting
    * 6.2 Baiting
-   * 6.3 Impact
-   * 6.4 Mitigation Strategies
 7. Comparison of Social Engineering Attacks
+   * 7.1 Security Impact and Key Defensive Measures
 8. Employee Security Training Checklist
 9. Conclusion
+   * 9.1 Key Takeaways
 10. References
-
----
 
 ## 1. Introduction
 
-Social engineering is a type of cyberattack that uses human interaction and psychological manipulation to trick people into revealing confidential information, opening malicious links, transferring money, or performing actions that help an attacker. Instead of depending only on technical vulnerabilities, social engineering attacks take advantage of common human behaviors such as trust, curiosity, fear, urgency, and helpfulness. Attackers may use emails, phone calls, text messages, fake websites, social media, or impersonation to appear legitimate. Common social engineering techniques include phishing, spear phishing, whaling, vishing, smishing, pretexting, and baiting. Understanding these techniques and following good security practices are important for reducing the risk of unauthorized access, data theft, financial fraud, and malware infections.
+Social engineering is a type of cyberattack that uses human interaction and psychological manipulation to trick people into revealing confidential information, opening malicious links, transferring money, or performing actions that help an attacker. It is considered an effective attack vector because attackers exploit human factors such as trust, curiosity, fear, urgency, authority, and helpfulness instead of relying only on technical vulnerabilities. Social engineering can be carried out through emails, phone calls, text messages, fake websites, social media, and impersonation. Common techniques include phishing, spear phishing, whaling, vishing, smishing, pretexting, and baiting. According to the FBI's Internet Crime Complaint Center (IC3), phishing/spoofing was among the most frequently reported categories of cybercrime in its recent Internet Crime Reports, demonstrating the continuing importance of user awareness and effective security controls. Organizations therefore need both technical protections and regular employee security training to reduce the risk of credential theft, financial fraud, malware infections, and unauthorized access.
 
 ## 2. Phishing Attacks
 
@@ -61,25 +53,33 @@ Social engineering is a type of cyberattack that uses human interaction and psyc
 
 Phishing is one of the most common forms of social engineering. In a phishing attack, an attacker sends a fraudulent email or message that appears to come from a trusted person, company, bank, or online service. The main purpose is to convince the victim to click a malicious link, open an attachment, provide login credentials, or share other sensitive information. Phishing attacks can target individuals as well as organizations.
 
+Phishing can also be divided into more targeted forms. **Spear phishing** targets specific individuals, **whaling** targets senior or high-value personnel, **vishing** uses voice or telephone communication, and **smishing** uses SMS or text messages.
+
 ### 2.2 How Phishing Works
 
-A typical phishing attack begins with the attacker creating a convincing message that looks legitimate. The message may use a trusted company logo, familiar language, or a false warning about an account problem. It may create a sense of urgency by asking the victim to verify an account, reset a password, or make a payment. A link in the message may lead to a fake website designed to collect usernames, passwords, banking information, or other personal details. Attachments may also contain malware.
+A typical phishing attack begins with the attacker creating a convincing message that looks legitimate. The message may use a trusted company logo, familiar language, or a false warning about an account problem. It may create a sense of urgency by asking the victim to verify an account, reset a password, or make a payment.
+
+The message may contain a link leading to a fake website designed to collect usernames, passwords, banking information, or other personal details. Attackers may also use malicious attachments to install malware. In some campaigns, stolen credentials are later used to access email, cloud services, financial accounts, or internal organizational systems.
 
 ### 2.3 Real-World Example
 
-A well-known example of phishing is the large-scale phishing campaigns that have impersonated Microsoft 365 and other cloud-service login pages. Attackers send messages claiming that a user's account requires verification or that a password is about to expire. The link directs the victim to a fake login page that captures the credentials entered by the user. Such campaigns have been widely reported by cybersecurity organizations and demonstrate how attackers use trusted brands to make fraudulent messages appear genuine.
+A documented example is the **2014 Dyre banking malware campaign**, which used phishing emails to target victims. According to the U.S. Computer Emergency Readiness Team (US-CERT), attackers distributed malicious emails containing PDF attachments. When victims opened the attachments, the campaign attempted to deliver Dyre malware, which could steal banking credentials and other sensitive information. This incident demonstrates how phishing can combine social engineering with malware delivery to compromise users and financial information.
 
 ### 2.4 Impact
 
 Phishing can result in stolen usernames and passwords, unauthorized access to email and cloud accounts, financial fraud, identity theft, and malware infections. When an employee's account is compromised, attackers may also use it to send additional phishing messages or gain access to organizational information. This can increase the damage beyond the original victim.
 
+A successful phishing attack can therefore affect the **confidentiality, integrity, and availability** of organizational information and services.
+
 ### 2.5 Mitigation Strategies
 
-1. **Security awareness training:** Employees should be trained to identify suspicious emails, unexpected attachments, unusual requests, and misleading links.
+1. **Security awareness training:** Employees should be trained to identify suspicious emails, unexpected attachments, unusual requests, misleading links, and signs of impersonation.
 
 2. **Multi-factor authentication (MFA):** MFA provides an additional layer of protection if a password is stolen through phishing.
 
-3. **Email and web security controls:** Organizations should use spam filters, phishing detection, URL scanning, attachment scanning, and domain protection mechanisms to identify and block malicious messages.
+3. **Email and web security controls:** Organizations should use spam filtering, phishing detection, URL scanning, attachment scanning, and domain protection mechanisms to identify and block malicious messages.
+
+4. **Verify suspicious requests independently:** Employees should confirm unusual requests for payments, credentials, sensitive information, or account changes through a separate trusted communication channel rather than replying directly to the suspicious message.
 
 
 ## 3. Spear Phishing
@@ -154,83 +154,92 @@ Vishing and smishing can result in stolen credentials, financial fraud, identity
 
 1. **Never share confidential information through unexpected calls or messages:** Banks, organizations, and legitimate service providers should be independently contacted using their official contact details.
 
-2. **Avoid suspicious links and attachments:** Users should not click links in unexpected SMS messages or provide information on websites reached through such links.
+2. **Avoid suspicious links and attachments:** Users should not click links in unexpected SMS messages or provide information on websites reached through suspicious messages.
 
-3. **Use MFA and security awareness:** Multi-factor authentication and regular awareness training can reduce the impact of stolen credentials and help users recognize fraudulent calls and messages.
+3. **Use caller and message verification:** Users should verify the identity of callers and senders before responding to requests involving passwords, OTPs, payments, or other sensitive information.
 
+4. **Enable multi-factor authentication:** MFA provides additional protection if credentials are stolen through vishing or smishing attacks.
 
 ## 6. Pretexting and Baiting
 
 ### 6.1 Pretexting
 
-Pretexting is a social engineering technique in which an attacker creates a false story or identity, known as a pretext, to obtain information or convince a victim to perform an action. The attacker may pretend to be an employee, customer, IT support technician, bank representative, or another trusted person. The success of pretexting depends on creating a believable situation and gaining the victim's trust.
+Pretexting is a social engineering technique in which an attacker creates a false story or identity, known as a pretext, to obtain information or convince a victim to perform an action. The attacker may pretend to be an employee, customer, IT support technician, bank representative, or another trusted person. The attacker first researches the target and then creates a believable situation that gives a reason for requesting information or access.
+
+**Real-World Case Study:** A documented example involved Iranian attackers who impersonated trusted individuals and organizations to gain the confidence of victims. According to the U.S. Department of Justice, the attackers used social engineering, impersonation, and carefully constructed online identities to deceive victims and obtain sensitive information. This case demonstrates how attackers can create believable identities and situations to manipulate victims.
+
+**Prevention Measures:**
+
+1. **Verify identity independently:** Confirm unusual requests through a trusted phone number, official website, or direct communication instead of relying only on the contact information provided by the requester.
+2. **Do not disclose sensitive information:** Never provide passwords, authentication codes, financial information, or confidential data simply because someone claims to be authorized.
+3. **Follow verification procedures:** Organizations should require proper approval and identity verification before employees provide sensitive information or perform high-risk actions.
 
 ### 6.2 Baiting
 
-Baiting is an attack technique that uses something attractive or interesting to persuade a victim to take an unsafe action. For example, an attacker may leave a USB drive containing malicious software in a location where employees are likely to find it. The attacker may also offer free software, files, media, or other attractive content that contains malware. When the victim interacts with the bait, the attacker may gain access to the system or information.
+Baiting is an attack technique that uses something attractive or interesting to persuade a victim to take an unsafe action. For example, an attacker may leave a USB drive containing malicious software in a location where employees are likely to find it. Digital baiting can also involve fake software, free downloads, media files, or other attractive content that contains malware. When the victim interacts with the bait, the attacker may gain access to the system or information.
 
-### 6.3 Impact
+**Real-World Case Study:** A documented example of physical baiting involved malicious USB drives being deliberately left in public places. In one reported incident, USB sticks containing malware were left in a London car park, and unsuspecting people picked them up and connected them to their computers. This demonstrates how curiosity and the desire to use a seemingly useful device can be exploited to introduce malware into a system.
 
-Pretexting can result in unauthorized disclosure of personal, financial, or organizational information. Baiting can lead to malware infections, unauthorized system access, data theft, and compromise of internal networks. Both techniques exploit human trust rather than depending entirely on technical vulnerabilities.
+**Prevention Measures:**
 
-### 6.4 Mitigation Strategies
-
-1. **Verify identities and requests:** Employees should confirm the identity of people requesting sensitive information before providing it.
-
-2. **Follow organizational security policies:** Sensitive information and access credentials should never be shared simply because someone claims to have a legitimate reason.
-
-3. **Control removable media and software:** Organizations should restrict the use of unknown USB devices, scan removable media, and prevent installation of unauthorized software.
-
+1. **Do not use unknown USB devices:** Employees should never connect unidentified or found USB drives to organizational computers.
+2. **Control removable media:** Organizations should restrict unauthorized USB devices and use endpoint security controls to monitor removable media.
+3. **Use trusted software sources:** Employees should download software and files only from approved and trusted sources and report suspicious devices or downloads to the security team.
 
 ## 7. Comparison of Social Engineering Attacks
 
-The following table compares common social engineering attacks based on their delivery method, primary target, difficulty of execution, and ease of mitigation.
+The following table compares common social engineering attacks based on their primary target, psychological technique used, and most effective countermeasure.
 
-| Attack Type    | Attack Vector                                      | Primary Target                      | Who Is at Risk?                         | Difficulty to Execute | Ease of Mitigation |
-| -------------- | -------------------------------------------------- | ----------------------------------- | --------------------------------------- | --------------------- | ------------------ |
-| Phishing       | Fraudulent emails or websites                      | General users and employees         | Individuals and organizations           | Low–Medium            | Medium–High        |
-| Spear Phishing | Personalized emails or messages                    | Specific individuals or employees   | Employees and organizations             | Medium                | Medium             |
-| Whaling        | Highly targeted messages to senior personnel       | Executives and high-value employees | Business leaders and organizations      | Medium–High           | Medium             |
-| Vishing        | Fraudulent phone or voice calls                    | Individuals and employees           | Bank customers, employees, and users    | Low–Medium            | Medium             |
-| Smishing       | Malicious SMS or text messages                     | Mobile users                        | Individuals and organizations           | Low–Medium            | Medium             |
-| Pretexting     | False identity or fabricated scenario              | Individuals with useful information | Employees, customers, and organizations | Medium                | Medium             |
-| Baiting        | Malicious files, USB devices, or attractive offers | Curious or unsuspecting users       | Individuals and organizations           | Low–Medium            | Medium–High        |
+| Attack Type    | Primary Target                    | Psychological Lever Exploited          | Best Countermeasure                                                  |
+| -------------- | --------------------------------- | -------------------------------------- | -------------------------------------------------------------------- |
+| Phishing       | General users and employees       | Urgency, fear, curiosity, and trust    | Email filtering, security awareness training, and MFA                |
+| Spear Phishing | Specific individuals or employees | Personalization, trust, and authority  | Verify requests independently and use MFA                            |
+| Whaling        | Executives and senior employees   | Authority, urgency, and business trust | Strong approval procedures and verification of financial requests    |
+| Vishing        | Individuals and employees         | Trust, fear, and authority             | Verify callers independently and avoid sharing sensitive information |
+| Smishing       | Mobile phone users                | Urgency, curiosity, and fear           | Do not open suspicious links and use mobile security controls        |
+| Pretexting     | Employees and individuals         | Trust, authority, and helpfulness      | Verify identity and the legitimacy of the request                    |
+| Baiting        | Employees and computer users      | Curiosity, greed, and temptation       | Avoid unknown USB devices, downloads, and external media             |
 
 ### 7.1 Security Impact and Key Defensive Measures
 
-| Attack Type    | Main Security Property Affected  | Typical Result                                            | Key Defensive Measures                                    |
-| -------------- | -------------------------------- | --------------------------------------------------------- | --------------------------------------------------------- |
-| Phishing       | Confidentiality and Integrity    | Credentials or sensitive information are stolen           | Security awareness, MFA, email filtering                  |
-| Spear Phishing | Confidentiality and Integrity    | Targeted account compromise or data theft                 | Verification procedures, MFA, email security              |
-| Whaling        | Confidentiality and Integrity    | Financial fraud or sensitive information disclosure       | Independent verification, MFA, approval controls          |
-| Vishing        | Confidentiality                  | Credentials, OTPs, or financial information are disclosed | Caller verification, awareness training, MFA              |
-| Smishing       | Confidentiality and Integrity    | Credential theft or malware infection                     | Avoid suspicious links, security filtering, awareness     |
-| Pretexting     | Confidentiality                  | Sensitive information is disclosed                        | Identity verification and security policies               |
-| Baiting        | Confidentiality and Availability | Malware infection or unauthorized access                  | Removable-media controls, scanning, software restrictions |
-
-
+| Attack Type    | Main Security Property Affected  | Typical Result                                   | Key Defensive Measures                              |
+| -------------- | -------------------------------- | ------------------------------------------------ | --------------------------------------------------- |
+| Phishing       | Confidentiality and Integrity    | Credential theft or malware infection            | Awareness training, email filtering, MFA            |
+| Spear Phishing | Confidentiality and Integrity    | Targeted credential theft or unauthorized access | MFA, verification, and email security               |
+| Whaling        | Confidentiality and Integrity    | Financial fraud or sensitive data theft          | Multi-person approval and verification              |
+| Vishing        | Confidentiality                  | Disclosure of sensitive information              | Caller verification and employee training           |
+| Smishing       | Confidentiality and Integrity    | Malicious link execution or credential theft     | SMS filtering and user awareness                    |
+| Pretexting     | Confidentiality and Integrity    | Unauthorized disclosure or access                | Identity verification and security procedures       |
+| Baiting        | Confidentiality and Availability | Malware infection or system compromise           | Removable-media controls and safe-download policies |
 
 ## 8. Employee Security Training Checklist
 
-Organizations should regularly train employees to recognize and respond to social engineering attacks. The following checklist can be used as a basic security awareness guide:
+Organizations should provide regular security awareness training to help employees recognize and prevent social engineering attacks. Employees should follow these five basic practices:
 
-* [ ] Check the sender's email address carefully before responding.
-* [ ] Do not click unexpected or suspicious links.
-* [ ] Do not open unknown or unexpected attachments.
-* [ ] Never share passwords, OTPs, or other confidential information through unsolicited calls, emails, or messages.
-* [ ] Verify unusual requests for money, sensitive information, or account changes through a separate trusted communication method.
-* [ ] Be cautious when a message creates unnecessary urgency, fear, or pressure.
-* [ ] Do not connect unknown USB drives or other removable devices to organizational computers.
-* [ ] Report suspicious emails, calls, messages, and websites to the IT or security team.
-* [ ] Use multi-factor authentication (MFA) whenever it is available.
-* [ ] Follow the organization's security policies and complete security awareness training regularly.
+1. **Verify suspicious requests:** Independently verify unexpected requests for passwords, confidential information, money transfers, or system access.
+
+2. **Identify phishing and impersonation:** Check the sender, links, attachments, phone calls, and messages carefully before responding or taking action.
+
+3. **Never share sensitive information:** Do not disclose passwords, OTPs, MFA codes, financial information, or confidential company data through unverified channels.
+
+4. **Avoid unknown links, files, and devices:** Do not open suspicious attachments, click unknown links, install untrusted software, or connect unknown USB devices.
+
+5. **Report security incidents immediately:** Report suspicious emails, calls, messages, lost devices, or possible security incidents to the organization's IT/security team without delay.
 
 
 ## 9. Conclusion
 
-Social engineering attacks demonstrate that cybersecurity depends not only on technical security controls but also on the awareness and actions of users. Phishing, spear phishing, whaling, vishing, smishing, pretexting, and baiting use different methods to manipulate victims into revealing information or performing unsafe actions. These attacks can lead to credential theft, financial fraud, malware infections, unauthorized access, and data loss. Regular security awareness training, multi-factor authentication, verification of unusual requests, secure communication practices, and timely reporting of suspicious activity can significantly reduce the risk of successful social engineering attacks.
+Social engineering attacks exploit human trust, emotions, and normal workplace behavior rather than relying only on technical vulnerabilities. Phishing, spear phishing, whaling, vishing, smishing, pretexting, and baiting can lead to credential theft, malware infections, financial loss, data exposure, and unauthorized access.
 
-The most important lesson for organizations is that employees are an important part of the security process. Building a security-aware culture and encouraging employees to verify suspicious requests can help prevent many social engineering incidents.
+Organizations can reduce these risks by combining employee awareness with technical security controls such as multi-factor authentication, email filtering, access controls, security monitoring, and safe handling of removable media. Employees should remain cautious when receiving unexpected requests and should independently verify suspicious communications before taking action.
+
+### 9.1 Key Takeaways
+
+1. **Verify before trusting:** Employees should independently verify unexpected requests for sensitive information, money transfers, or system access.
+
+2. **Use layered security controls:** MFA, email security, access controls, monitoring, and secure device policies provide additional protection when human mistakes occur.
+
+3. **Report suspicious activity quickly:** Early reporting of phishing emails, suspicious calls, malicious links, or unknown devices can help security teams contain incidents before they cause greater damage.
 
 
 ## 10. References
@@ -249,3 +258,18 @@ The most important lesson for organizations is that employees are an important p
 
 5. Federal Bureau of Investigation (FBI). *Business Email Compromise.*
    https://www.ic3.gov/CrimeInfo/BEC
+
+6. U.S. Computer Emergency Readiness Team (US-CERT). *Phishing Campaign Linked with Dyre Banking Malware.*
+   https://www.cisa.gov/ncas/alerts/TA14-300A
+
+7. U.S. Department of Justice. *Justice Department Announces Charges Against Four Iranian Nationals for Multi-Year Cyber Campaign Targeting U.S. Companies.*
+   https://www.justice.gov/usao-sdny/pr/justice-department-announces-charges-against-four-iranian-nationals-multi-year-cyber
+
+8. WIRED. *An Unprecedented Look at Stuxnet, the World's First Digital Weapon.*
+   https://www.wired.com/2014/11/countdown-to-zero-day-stuxnet/
+
+9. FBI Internet Crime Complaint Center (IC3). *Internet Crime Reports.*
+   https://www.ic3.gov/AnnualReport
+10. U.S. Department of Justice. “Iranian Hackers Indicted for Stealing Data from Aerospace and Satellite Tracking Companies.” https://www.justice.gov/usao-edva/pr/iranian-hackers-indicted-stealing-data-aerospace-and-satellite-tracking-companies
+
+11. WIRED. “Trojan Malware Delivered by Sneakernet.” https://www.wired.com/2007/04/trojan-malware-/
